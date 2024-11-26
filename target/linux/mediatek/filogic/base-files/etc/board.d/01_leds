@@ -65,6 +65,11 @@ nokia,ea0326gmp)
 	ucidef_set_led_netdev "lan" "LAN" "green:lan" "br-lan" "link"
 	ucidef_set_led_netdev "wlan" "WLAN" "green:wlan" "phy1-ap0" "link"
 	;;
+nradio,c8-668gl-second-system)
+	ucidef_set_led_default "power" "POWER" "hc:blue:status" "1"
+	ucidef_set_led_netdev "wifi" "WIFI" "hc:blue:wifi" "phy1-ap0" "link"
+	ucidef_set_led_netdev "5g" "5G" "hc:blue:cmode5" "eth1" "link"
+	;;
 openembed,som7981)
 	ucidef_set_led_netdev "lanact" "LANACT" "green:lan" "eth1" "rx tx"
 	ucidef_set_led_netdev "lanlink" "LANLINK" "amber:lan" "eth1" "link"
